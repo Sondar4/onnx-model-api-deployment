@@ -24,12 +24,17 @@ The application is containerized using Docker, making it easy to deploy.
 
 ### Steps to Deploy
 
-1. Build the Docker image:
+1. Add the trained model to the models folder
+   ```bash
+   cp /path/to/your_model.onnx models/model.onnx
+   ```
+
+2. Build the Docker image:
    ```bash
    docker build -t onnx-model-api .
    ```
 
-2. Run the Docker container:
+3. Run the Docker container:
    ```bash
    docker run -d -p 8000:8000 onnx-model-api
    ```

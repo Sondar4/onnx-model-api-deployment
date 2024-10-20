@@ -1,4 +1,5 @@
 .vscode
+models/*.onnx
 
 # --- PYTHON DEFAULT GITIGNORE ---
 # source -> https://github.com/github/gitignore/blob/main/Python.gitignore
